@@ -1,0 +1,15 @@
+rule match
+{
+
+	meta:
+		A3="Extend the YARA signature matching to search directories"
+
+	strings:
+		$a = "areeba"
+            $b = "batool"
+            $c = "k200341"
+		
+	condition:
+		$a or $b or $c
+
+}
